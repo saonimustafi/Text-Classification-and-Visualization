@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h2>CSE 256 Project NLP</h2>
+
+	</div>
+	</header>
+	<p style="color:#0e1048;font-size:40px;text-align: center;"><b>Results </b></p>
+
+    <script type="text/javascript">
+            let results = {{ results | tojson }}
+    </script>
+
+    <div id="test"></div>
+
+{#    <script type="text/javascript">#}
+{#        document.write(results.prediction)#}
+{#    </script>#}
+
+	<div>
+	{% if results.prediction == 0%}
+	<h2 style="color:#891a0c; text-align: center">Negative review</h2>
+	{% elif results.prediction == 1%}
+	<h2 style="color:#076a3f; text-align: center">Positive review</h2>
+	{% endif %}
+
+	</div>
+    <div id="graph1" class="graph"></div>
+    <div id="graph2" class="graph"></div>
+    <div id="graph3" class="graph"></div>
+    <div id="graph4" class="graph"></div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="../static/js/results.js">  </script>
+
+</body>
+</html>

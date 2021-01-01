@@ -1,0 +1,136 @@
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#f4f3f3;
+}
+
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.ml-container {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+	margin-top: 40px;
+}
+
+.inputs-container {
+	width:500px;
+	float: left;
+	margin-left: 10px;
+}
+
+.results-container {
+	width:1000px;
+	float: right;
+	margin-right: 20px;
+}
+
+header{
+	background: #101a3f;
+	border-bottom:#101a3f 3px solid;
+	height:100px;
+	width:100%;
+	padding-top:30px;
+}
+
+header h2{
+	text-align:center;
+	color:#fff;
+
+}
+
+.btn-info {background-color: #101a3f;
+	height:40px;
+	width:100px;
+	color: white;
+	font-size: 15px;
+	margin-bottom: 40px;
+
+} /* Blue */
+.btn-info:hover {background: #061c34;}
+
+.graph {
+	/*width: 40%;*/
+	/*height: 300px;*/
+	display: inline-block;
+	text-align: center;
+}
+
+/*----- Tabs -----*/
+.tabs {
+	width:100%;
+	display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+	.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+		text-decoration: none;
+}
+
+.tab-links li {
+	margin:0px 5px;
+	float:left;
+	list-style:none;
+	text-decoration: none;
+}
+
+.tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	background: #b1b4bb;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+	transition:all linear 0.15s;
+	text-decoration: none;
+}
+
+.tab-links a:hover {
+	background: #101a3f;
+	text-decoration:none;
+	text-decoration: none;
+}
+
+li.active a, li.active a:hover {
+	background: #101a3f;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background:#fff;
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+    text-decoration: none;
+}
+
+/* ------ End of tabs ------ */
+
+.results-heading {
+	/*padding: 10px 20px 10px 20px;*/
+	text-align: center;
+	/*vertical-align: center;*/
+	color: #0e1048;
+	font-size: 30px;
+	/*margin-top: -10px;*/
+}
