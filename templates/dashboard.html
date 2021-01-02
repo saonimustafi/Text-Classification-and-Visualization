@@ -9,7 +9,7 @@
 
 <header>
     <div class="container">
-        <h2>CSE 256 Project NLP</h2>
+        <h2>NLP Text Classification</h2>
 
     </div>
 </header>
@@ -18,8 +18,8 @@
    <div class="inputs-container">
     <div class="tabs">
     <ul class="tab-links">
-        <li class="active"><a href="#tab1">Part 1</a></li>
-        <li><a href="#tab2">Part 2</a></li>
+        <li class="active"><a href="#tab1">Sentiment-analysis</a></li>
+        <li><a href="#tab2">Quora-question-sincerity</a></li>
     </ul>
 
     <div class="tab-content">
@@ -27,7 +27,7 @@
             <div class="ml-container">
 
                 <form action="{{ url_for('predict') }}" method="POST">
-                    <p>Enter your text for Part 1</p>
+                    <p>Enter text to check its sentiment</p>
                     <!-- <input type="text" name="comment"/> -->
                     <textarea name="comment" align="center"
                               style="border-radius: 5px; width:200px; height: 50px;"></textarea>
@@ -47,7 +47,7 @@
             <div class="ml-container">
 
                 <form action="{{ url_for('predict') }}" method="POST">
-                    <p>Enter your text for Part 2</p>
+                    <p>Enter text to check if it's a sincere Quora question</p>
                     <!-- <input type="text" name="comment"/> -->
                     <textarea name="comment" align="center"
                               style="border-radius: 5px; width:200px; height: 50px;"></textarea>
@@ -104,8 +104,8 @@
 {#     <div class="ml-container">#}
 {#         <div class="tabs">#}
 {#    <ul class="tab-links">#}
-{#        <li class="active"><a href="#tab1">Part 1</a></li>#}
-{#        <li><a href="#tab2">Part 2</a></li>#}
+{#        <li class="active"><a href="#tab1">Quora-question-sincerity</a></li>#}
+{#        <li><a href="#tab2">Sentiment-analysis</a></li>#}
 {#    </ul>#}
 {##}
 {#    <div class="tab-content">#}
@@ -124,7 +124,7 @@
 {#            <div class="ml-container">#}
 {##}
 {#                <form action="{{ url_for('predict') }}" method="POST">#}
-{#                    <p>Enter your text for Part 2</p>#}
+{#                    <p>Enter text to check if it's a sincere Quora question</p>#}
 {#                    <!-- <input type="text" name="comment"/> -->#}
 {#                    <textarea name="comment" align="center"#}
 {#                              style="border-radius: 5px; width:200px; height: 50px;"></textarea>#}
@@ -158,4 +158,3 @@
 
 </body>
 </html>
-
